@@ -8,7 +8,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'jet-composites/bot-client/loader'],
       // self.websocketConnectionUrl = 'ws://141.144.22.12:8888/chat/ws';
       self.websocketConnectionUrl = 'wss://68c5fd2e.ngrok.io/chat/ws';
       self.userId = guid();
-      self.channel = '82E19CF2-A02B-4F8C-80CF-5F6209389636';
+      self.channel = 'EEE5263E-8A45-4ACF-80DD-A34E5657C59E';
 
 
       self.handleActivated = function(info) {
