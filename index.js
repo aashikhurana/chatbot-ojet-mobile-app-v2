@@ -10,5 +10,10 @@ app.get('/', function(req, res){
     res.render('index.html');
 });
 
-app.listen(process.env.PORT || 3000);
-console.log('Listening on port ' +process.env.PORT );
+var port = process.env.PORT || 3000; 
+
+console.log('Listening on port ' +port);
+
+app.listen(port);
+
+console.log('Listening on port ' +port);
