@@ -5,10 +5,10 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'jet-composites/bot-client/loader'],
     function DashboardViewModel() {
       var self = this;
 
-      self.websocketConnectionUrl = 'ws://141.144.22.12:8888/chat/ws';
-      //self.websocketConnectionUrl = 'wss://68c5fd2e.ngrok.io/chat/ws';
+      //self.websocketConnectionUrl = 'ws://141.144.22.12:8888/chat/ws';
+      self.websocketConnectionUrl = 'wss://f8c04d71.ngrok.io';
       self.userId = guid();
-      self.channel = 'EEE5263E-8A45-4ACF-80DD-A34E5657C59E';
+      self.channel = '82A5AE6E-FDC6-4C4D-967E-395F00004793';
 
 
       self.handleActivated = function(info) {

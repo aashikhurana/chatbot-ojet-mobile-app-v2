@@ -133,6 +133,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', './reconnecting-websocket', 'ojs/oji
 
             var getDisplayUrl = function(url) {
                 var pos = url.indexOf("://");
+				console.log("URL is:"+ url);
                 var startpos = pos === -1 ? 0 : pos + 3;
                 var endpos = url.indexOf('/', startpos);
                 endpos = endpos === -1 ? url.length : endpos;
@@ -141,6 +142,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', './reconnecting-websocket', 'ojs/oji
 
             // send message to the bot
             var sendToBot = function(message, isAcknowledge) {
+				debugger;
                 // wait for websocket until open
                 waitForSocketConnection(ws, function() {
                     self.waitingForText(true);
@@ -161,7 +163,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', './reconnecting-websocket', 'ojs/oji
                             waitForSocketConnection(socket, callback);
                         }
 
-                    }, 1000); // wait 1 second for the connection...
+                    }, 30000); // wait 1 second for the connection...
             }
             var debug = function(msg) {
                 console.log(msg);
